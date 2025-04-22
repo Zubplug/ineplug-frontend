@@ -1,0 +1,94 @@
+.transactions-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #f8f9fb;
+    min-height: 100vh;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+  }
+  
+  .date-filter {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .transaction-card {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  }
+  
+  .tx-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  
+  .tx-type {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .tx-amount {
+    font-weight: bold;
+    color: #0676c0;
+  }
+  
+  .tx-date {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .tx-status.success {
+    color: #2bb673;
+    font-weight: bold;
+  }
+  
+  .tx-status.failed {
+    color: #d10000;
+    font-weight: bold;
+  }
+  
+  .tx-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .download-btn,
+  .share-btn {
+    background: #0676c0;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .share-btn {
+    background: #444;
+  }
+  
