@@ -140,7 +140,7 @@ export default function App() {
         <Route path="/partner/assigned-jobs" element={<PartnerProtectedRoute><PartnerAssignedRequestsPage /></PartnerProtectedRoute>} />
         <Route path="/partner/claim-jobs" element={<PartnerProtectedRoute><ClaimJobs /></PartnerProtectedRoute>} />
 
-        {/* Aggregator */}
+        {/* Aggregators */}
         <Route path="/aggregator/dashboard" element={<AggregatorProtectedRoute><AggregatorDashboard /></AggregatorProtectedRoute>} />
 
         {/* 404 */}
