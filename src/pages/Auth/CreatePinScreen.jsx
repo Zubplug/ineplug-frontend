@@ -1,5 +1,3 @@
-// src/pages/Auth/CreatePinScreen.jsx
-
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
@@ -50,12 +48,12 @@ const CreatePinScreen = () => {
       password: formData.password,
       password_confirmation: formData.confirmPassword,
       referralCode: formData.referralCode,
-      transactionPin: pin
+      transactionPin: pin,
     };
 
     try {
       setLoading(true);
-      const response = await fetch('http://127.0.0.1:8000/api/register', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(finalPayload),
